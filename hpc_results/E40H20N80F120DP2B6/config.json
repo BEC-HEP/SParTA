@@ -1,0 +1,36 @@
+{
+  "model_name": "hispiformer",
+  "model": {
+    "depth": 40,
+    "n_heads": 20,
+    "n_layers": 6,
+    "num": 80,
+    "ffn_mult": 3,
+    "half_dim": 32,
+    "cross": true,
+    "pt_weights": false,
+    "cls_attn": false,
+    "dropout": 0.2,
+    "drop_ia": 0.2
+  },
+  "train": {
+    "epochs": 200,
+    "batch_size": 512,
+    "lr": 0.005,
+    "lr_factor": 0.5,
+    "lr_patience": 3,
+    "min_lr": 1e-06,
+    "grad_clip": 1.0,
+    "patience": 12,
+    "rel_change": 1e-05,
+    "workers": 6,
+    "device": "cuda"
+  },
+  "dims": {
+    "seq_dim": 140,
+    "vec_len": 9,
+    "glob_dim": 53,
+    "n_classes": 2
+  },
+  "seed": 42
+}

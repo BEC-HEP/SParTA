@@ -1,0 +1,6 @@
+split=test  n=199856
+loss      : 0.3628
+accuracy  : 0.8480
+AUC       : 0.9180
+rej @ 30% : 126.3
+rej @ 50% : 45.1

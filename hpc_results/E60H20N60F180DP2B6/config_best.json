@@ -1,0 +1,22 @@
+{
+  "model_name": "hispiformer",
+  "model": {
+    "depth": 60,
+    "n_heads": 20,
+    "n_layers": 6,
+    "num": 60,
+    "ffn_mult": 3,
+    "half_dim": 32,
+    "cross": true,
+    "pt_weights": false,
+    "cls_attn": false,
+    "dropout": 0.2,
+    "drop_ia": 0.2
+  },
+  "dims": {
+    "seq_dim": 140,
+    "vec_len": 9,
+    "glob_dim": 53,
+    "n_classes": 2
+  }
+}
